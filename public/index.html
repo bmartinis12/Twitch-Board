@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="See a board of twitch streamers!">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/e874c4d243.js" crossorigin="anonymous"></script>
+    <title>Twitch Board</title>
+</head>
+<body>
+    <header>
+        <div class="header-div">
+          <div class='dbl-line'></div>
+          <h1>Twitch Board <i class="fa-brands fa-twitch"></i></h1>
+          <div class='dbl-line'></div>
+        </div>
+        <p><a href='https://www.linkedin.com/in/benjamin-martinis-863350272/' target="_blank">By: Ben Martinis <i class="fa-brands fa-linkedin"></i></a></p>
+      </header>
+      <main>
+        <div class='container'>
+          <div class="top-games section">
+            <h2>Top 10 Games:</h2>
+          </div>
+          <div class="streams section">
+            <h2>Top Streams:</h2>
+          </div>
+        </div>
+        <div class='search-section'>
+          <div class='search-div'>
+            <h2>Search for a Channel:</h2>
+            <form class='search'>
+              <input type="text" placeholder="Channel name or category..." name="search" class='search-input'>
+              <button><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <div class="results"></div>
+        </div>
+      </main>
+      <footer>
+        <p>Created on 7/24/23</P>
+        <p><a href='https://dev.twitch.tv/docs/api/' target='_blank'>Twitch API</a></p>
+      </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

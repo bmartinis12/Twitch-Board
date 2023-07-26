@@ -172,6 +172,9 @@ async function getStreams() {
         streamContainer.classList.add('stream-container');
         
         let name = document.createElement('h4');
+        if(streamer.user_name.length > 14){
+          streamer.user_name = streamer.user_name.slice(0,15) + " " + streamer.user_name.slice(15);
+        }
         name.textContent = `${streamer.user_name.replace(/_/g, " ")}`;
         streamContainer.appendChild(name);
         
